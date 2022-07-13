@@ -1,14 +1,15 @@
 {% extends "encyclopedia/layout.html" %}
 
 {% block body %}
+{{ error }}
 
-  {{ error }}
-<form action="{% url 'createnewpage' %}" method="post">
+<form action="/editpages/{{ Title }}" method="post">
     {% csrf_token %}
     
     {{ form }}
 
-    <input type="Submit">
+    <input type="Submit" value= "Edit Wikis">
+
 </form>
 
 
