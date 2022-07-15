@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block body %}
+    <h1>All Pages</h1>
+
+    <ul>
+        {% for item in items %}
+            <li>
+                <a href="wiki/{{ item }}"> {{ item }}
+                    
+                </a>
+                
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

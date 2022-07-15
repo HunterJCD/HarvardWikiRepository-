@@ -1,0 +1,1 @@
+Fish are the scaly buddies that live in the wet spots.
